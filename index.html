@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index2| clarista</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pink Interaktif</title>
+    <style>
+        body {
+            background-color: #ffb6c1; /* Pink lembut */
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff1493; /* Pink gelap */
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffe4e1; /* Pink pucat */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #ff69b4; /* Hot pink */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff1493; /* Lebih gelap saat hover */
+        }
+        input {
+            padding: 10px;
+            font-size: 1em;
+            border: 2px solid #ffb6c1;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        #output {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #ff1493;
+        }
+        .interactive-element {
+            transition: transform 0.3s;
+        }
+        .interactive-element:hover {
+
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat Datang di Website memori!</h1>
+        <p>Klik tombol di bawah untuk interaksi seru.</p>
+        <li><a href="index3.html"</li>
+        <button onclick="changeColor()">foto orang yang di suka</button>
+        <li><a href="index4.html"</li>
+        <button onclick="showMessage()">Tampilkan Pesan</button>
+        <div class="interactive-element">
+            <p>Hover di sini untuk efek!</p>
+        </div>
+        
+        <h2>Masukkan Nama Anda</h2>
+        <input type="text" id="nameInput" placeholder="Nama Anda">
+        <button onclick="greetUser()">Sapa nama kamu!</button>
+        <div id="output"></div>
+    </div>
+
+    <script>
+        function changeColor() {
+            const h1 = document.querySelector('h1');
+            h1.style.color = h1.style.color === 'rgb(255, 20, 147)' ? '#ff69b4' : '#ff1493';
+        }
+
+        function showMessage() {
+            alert('Halo! Website ini penuh dengan warna pink yang menyenangkan!');
+        }
+
+        function greetUser() {
+            const name = document.getElementById('nameInput').value;
+            const output = document.getElementById('output');
+            if (name) {
+                output.textContent = `Halo, ${name}! Selamat datang di website memori!`;
+            } else {
+                output.textContent = 'Silakan masukkan nama Anda.';
+            }
+        }
+    </script>
+</body>
+</html>
+</body>
+</html>
